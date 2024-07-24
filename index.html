@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Alura</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<main class="decoder">
+        <section class="logo">
+            <img src="./assets/logo-alura.svg" alt="logo da alura">
+        </section>
+        <section class="decoder__input_area">
+            <div class="decoder__input_area__top">
+                <textarea maxlength="190" class="decoder__input_area__input" id="input-message" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="decoder__input_area__bottom">
+                <div class="decoder__input_area__warning">
+                    <img src="./assets/bi_exclamation-circle-fill.svg" alt="símbolo com exclamação">
+                    <p class="decoder__input_warning">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="decoder__input_area__buttons">
+                    <a onclick="encodeMessage()" id="encodeButton" class="decoder__input_area__buttons__code">Criptografar</a>
+                    <a onclick="decodeMessage()" id="decodeButton" class="decoder__input_area__buttons__decode">Descriptografar</a>
+                </div>
+            </div>
+        </section>
+        <section class="decoder__output_area">
+            <div class="decoder__output_area__message">
+                <p class="output_message" id="output-message"></p>
+            </div>
+            <div id="no-msg" class="decoder__output_area__no_message">
+                <div class="decoder__output_area__no_message__image">
+                    <img id="no-msg-img" class="illustration" src="./assets/illustration.svg" alt="ilustração de uma pessoa com uma lupa simbolizando que não há nenhum texto.">
+                </div>
+                <div class="decoder__output_area__no_message__content">
+                    <p class="decoder__output_area__no_message__subtitle">Nenhuma mensagem encontrada</p>
+                    <p class="decoder__output_area__no_message__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div id="copy" class="decoder__output_area__button">
+            <a onclick="copyMessage()"  class="decoder__output_area__copy_button">Copiar</a>
+            </div>
+        </section>
+</main>
+<footer class="footer">
+<p>Desenvolvido por Nicollas De Jorge & Alura - Challenge Decodificador de texto (2024)</p>
+</footer>
+
+<script src="./js/decoder.js"></script>
+</body>
+</html>
