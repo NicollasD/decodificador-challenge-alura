@@ -1,4 +1,8 @@
-# decodificador-challenge-alura
+<h1>Challenge Decodificador Alura</h1>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7ef8902a-820e-4cbf-b4b6-234a81f60eb0">
+</p>
+
 Projeto de decodificador de texto desenvolvido para o Challenge da Alura/Oracle ONE em 2024
 
 O projeto é feito com HTML, CSS e Javascript, e consiste em uma aplicação de criptografia de textos para que você possa trocar mensagens secretas com pessoas que também sabem o segredo da criptografia utilizada.
